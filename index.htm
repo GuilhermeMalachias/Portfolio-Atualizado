@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="Assets/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Slabo+27px&display=swap" rel="stylesheet">
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header>
+        Guilherme Silva Malachias
+        <br>
+        {Web Developer}
+        <nav>
+            <ul id="menu">
+                <li id="about" class="items" onclick="scrollMode()">Sobre</li>
+                <li id="techi" class="items" onclick="scrollMode()">Tecnologias</li>
+                <li id="project" class="items" onclick="scrollMode()">Projetos</li>
+                <a class="items" href="https://github.com/GuilhermeMalachias" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="container">
+        <div id="content">
+            <h1 id="aboutMe">Sobre mim</h1>
+            <div id="cardProfile">
+                <img id="imagePerfil" src="Assets/perfilCard.png">
+                <p class="textInfo"> Sou apaixonado em desenvolver soluções para o dia a dia, sempre buscando a melhorar
+                    cada vez que
+                    coloco as mãos no código, procuro a impactar pessoas ao meu derredor trazendo soluções para
+                    seus problemas que podem ser executados com algumas linhas de código!
+                    Estudando sempre, aprendendo e evoluindo cada vez mais, assim sigo a minha jornada nesse mundo
+                    imenso de devs!</p>
+            </div>
+            <h1 id="tech">Tecnologias e Experiências</h1>
+
+            <div id="containerExp">
+                <div class="contentExp">
+                    <div class="techExp">
+                        <h2>Experiência</h2> <br>
+                        <abbr title="HTML5"><img class="exptech" src="Assets/html_adobespark.png" alt=""></abbr>
+                        <abbr title="CSS3"><img class="exptech" src="Assets/css_adobespark.png" alt=""></abbr>
+                        <abbr title="JavaScript"><img class="exptech" src="Assets/javascript_adobespark.png"
+                                alt=""></abbr>
+                    </div>
+
+                    <div class="techExp">
+                        <h2>Estudando</h2> <br>
+                        <abbr title="PHP"><img class="exptech" src="Assets/php_adobespark.png" alt=""></abbr>
+                        <abbr title="Bootstrap"><img class="exptech" src="Assets/bootstrap_adobespark.png"
+                                alt=""></abbr>
+                        <abbr title="ReactJS"><img class="exptech" src="Assets/reactjs_adobespark.png" alt=""></abbr>
+                        <abbr title="SQL"><img class="exptech" src="Assets/sql_adobespark.png" alt=""></abbr>
+                    </div>
+
+                    <div class="techExp">
+                        <h2>Interesse</h2> <br>
+                        <abbr title="NodeJS"><img class="exptech" src="Assets/node js_adobespark.png" alt=""></abbr>
+                        <abbr title="React Native"><img class="exptech" src="Assets/reactjs_adobespark.png"
+                                alt=""></abbr>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1 id="cardProjectName">Projetos</h1>
+        <div class="cardProjects">
+            <div id="sliderWorkshop">
+                <a href="https://guilhermemalachias.github.io/Workshop/" target="_blank" rel="noopener noreferrer"><img class="selected" src="Assets/workshop.png"></a>
+                <a href="https://guilhermemalachias.github.io/Barber-shop-project/" target="_blank" rel="noopener noreferrer"><img class="selected" src="Assets/barbershop.png"></a>
+            </div>
+        </div>
+
+    <footer>
+        <div id="cardContact">
+            <p>Email: gui.malachias@gmail.com</p>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
