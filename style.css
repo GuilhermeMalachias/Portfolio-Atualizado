@@ -252,10 +252,10 @@ header {
     }
     .items {
         font-size: 1rem;
-        padding: 6px;
+        padding: 3px;
     }
     #github {
         font-size: 1rem;
-        padding: 6px;
+        padding: 3px;
     }
 }
