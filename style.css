@@ -14,7 +14,7 @@ header {
 
     height: 10vh;
     font-family: Arvo, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     padding: 2rem;
 
     display: flex;
@@ -24,7 +24,7 @@ header {
     border-bottom: 2px solid;
     border-image-slice: 1;
     border-width: -1em;
-    border-image-source: linear-gradient(aqua, rgb(101, 3, 192), blue);
+    border-image-source: linear-gradient(to right, aqua, rgb(101, 3, 192), blue);
 }
 
 #menu {
@@ -40,8 +40,23 @@ header {
     text-decoration: none;
 
     padding: 10px;
-    font-size: 1rem;
+    font-size: 1,5rem;
     transition: 0.3s;
+}
+
+#github {
+    list-style: none;
+    color: #646464;
+    text-decoration: none;
+
+    padding: 10px;
+    font-size: 1,5rem;
+    transition: 0.3s;
+}
+
+#github:hover {
+    cursor: pointer;
+    color: white;
 }
 
 .items:hover {
@@ -79,7 +94,7 @@ header {
 }
 
 .textInfo {
-    font-size: 20px;
+    font-size: 25px;
     font-family: Slabo, Times, sans-serif;
     text-align: center;
 }
@@ -120,6 +135,8 @@ header {
     color: white;
     text-align: center;
     
+    margin: auto;
+
     padding: 30px;
 }
 
@@ -154,8 +171,8 @@ header {
     
     margin: auto;
     
-    width: 50vw;
-    height: 30vh;
+    width: 60vw;
+    height: 60vh;
 }
 
 
@@ -169,8 +186,7 @@ header {
     margin: auto;
 
     position: relative;
-    bottom: -0.1em;
-    left: -1em;
+    
 }
 
 #sliderWorkshop img{
@@ -209,4 +225,37 @@ header {
 
 #sliderBarber img.select{
     opacity: 1;
+}
+
+
+#cardContact {
+    color: white;
+    background: #201f24;
+    border-top: 2px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to left, aqua, rgb(101, 3, 192), blue);
+
+    font-family: Arvo, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    
+    margin-top: 50px;
+    padding: 30px;
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        height: 20vh;
+        padding: 10px;
+        margin: auto;
+    }
+    .items {
+        font-size: 1rem;
+        padding: 6px;
+    }
+    #github {
+        font-size: 1rem;
+        padding: 6px;
+    }
 }

@@ -1,15 +1,21 @@
-let scrollItems = [
-    document.getElementById('about'),
-    document.getElementById('techi'),
-    document.getElementById('project')
-];
+const menuScroll = document.querySelectorAll('.items');
 
-function scrollMode(toUp, toDown) {
-    return {toUp, toDown}
+
+menuScroll.forEach(item => {
+    item.addEventListener('click', scrollToAbout);
+})
+
+function scrollToAbout(event) {
+    event.preventDefault();
+    const element = event.target;
+    const id = element.getAttribute('href');
+    const to = document.querySelector(id).offsetTop;
+    
+    window.scroll({
+        top: to,
+        behavior: "smooth"
+    });
 }
-
-
-
 
 let time = 3000,
     currentImageIndex = 0,
@@ -38,4 +44,4 @@ function start() {
     }, time)
 }
 
-window.addEventListener("load", start)
+window.addEventListener("load", start);
